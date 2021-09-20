@@ -1,0 +1,107 @@
+body header {
+  background-color: azure;
+  .navbar {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    .logo {
+      margin: 0% 1%;
+      span {
+        font-size: 44px;
+        color: #57727a;
+      }
+      span:hover {
+        color: rgb(247, 244, 244);
+      }
+    }
+    ul {
+      display: flex;
+      display: flex;
+      margin: 1% 0% 0% 2%;
+      flex-wrap: wrap;
+      /* flex-direction: column; */
+      align-content: center;
+    }
+    li {
+      list-style: none;
+    }
+    li a {
+      margin: 2px 3px;
+      padding: 5px 11px;
+      display: block;
+      color: #6e848b;
+      // font-size: 20px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #597b85;
+      border-radius: 50px;
+      color: rgb(255, 255, 255);
+    }
+  }
+  .imgintro {
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    /* justify-content: center; */
+    align-items: center;
+    .img {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      // background-color: aliceblue;
+      margin: 0 auto;
+      width: 225px;
+      img {
+        object-fit: cover;
+        width: 250px;
+        border-radius: 50%;
+      }
+    }
+    .intro {
+      width: 200px;
+      height: 55px;
+      line-height: 1.5;
+      #hellotext {
+        font-size: 30px;
+        color: #4a7c7d;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        animation: span1 3s ease-in 1s infinite reverse;
+
+        @keyframes span1 {
+          from {
+            color: rgb(125, 125, 180);
+          }
+          to {
+            color: rgb(143, 92, 192);
+          }
+        }
+      }
+      p {
+        color: #788384;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 300;
+        width: 150px;
+      }
+      .dot {
+        color: rgb(52, 59, 56);
+        animation: dot 3s ease-in 1 reverse;
+
+        @keyframes dot {
+          from {
+            font-size: 20px;
+          }
+          to {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
