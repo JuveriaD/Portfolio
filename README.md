@@ -1,3 +1,3 @@
 # Portfolio
-work in progress
- https://juveriad.github.io/Portfolio/portfolio
+[work in progress]
+ (https://juveriad.github.io/Portfolio/portfolio)
