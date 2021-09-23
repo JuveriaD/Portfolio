@@ -4,62 +4,59 @@ body #home {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  height: 400px;
+  height: 630px;
   position: relative;
   width: 100%;
+  top: 0;
 
   .intro {
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // width: 100%;
-    // height: 55px;
     line-height: 1.5;
-    // border: 2px solid;
-    // span {
+    flex-wrap: wrap;
+    align-content: center;
+
     #hellotext {
-      font-size: 30px;
-      color: #fdfdfd;
+      font-size: 40px;
+      // opacity: 0.9;
+      width: fit-content;
       font-family: "Ubuntu", sans-serif;
       font-weight: 500;
-      animation: span1 4s ease-in-out 1s 1 alternate;
+      animation: span1 4s ease-in-out 2s 1 alternate;
+
+      background-color: rgb(255, 255, 255);
+      color: black;
+      font-weight: bold;
+      margin: 0 auto;
+
+      // text-align: center;
+
+      mix-blend-mode: screen;
 
       @keyframes span1 {
         from {
-          color: rgb(179, 202, 250);
+          color: rgb(8, 119, 247);
         }
         to {
-          color: rgb(139, 214, 233);
+          color: rgb(70, 66, 66);
         }
       }
     }
 
     p {
-      color: #0b0b0c;
+      color: #000000;
+      background-color: rgb(255, 255, 255);
+      mix-blend-mode: screen;
+      // opacity: 0.9;
       font-family: "Open Sans Condensed", sans-serif;
       font-weight: 300;
       font-size: 20px;
-      // width: 150px;
     }
-
-    // .dot {
-    //   color: rgb(52, 59, 56);
-    //   animation: dot 3s ease-in 1 reverse;
-
-    //   @keyframes dot {
-    //     from {
-    //       font-size: 20px;
-    //     }
-    //     to {
-    //       font-size: 30px;
-    //     }
-    //   }
-    // }
   }
   .links {
     display: flex;
     a {
-      margin: 5% 0% 0% 5%;
+      padding: 2% 2% 10% 4%;
       display: inline-block;
     }
 
@@ -86,6 +83,19 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.67;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100px;
+    width: auto;
+    margin: 30% 0% 0% 0%;
   }
 }
