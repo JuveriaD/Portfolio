@@ -1,0 +1,48 @@
+body footer {
+  background-color: rgb(226, 221, 221);
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    a {
+      // padding: 2% 0% 1% 1%;
+      margin: 1% 2% 0% 0%;
+      display: inline-block;
+    }
+
+    .fa-github {
+      content: "\f09b";
+      font-size: 20px;
+      color: black;
+      padding: 25% 25%;
+    }
+    .fa-github:hover {
+      border: 2px dotted black;
+      font-size: 24px;
+      border-radius: 40%;
+    }
+    .fa-twitter {
+      content: "\f099";
+      font-size: 20px;
+      color: rgb(59, 153, 230);
+      padding: 25% 25%;
+    }
+    .fa-twitter:hover {
+      border: 2px dotted rgb(1, 139, 252);
+      font-size: 24px;
+      border-radius: 40%;
+    }
+  }
+  .textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    height: 50px;
+    color: rgb(84, 83, 85);
+  }
+}
