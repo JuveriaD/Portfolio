@@ -78,3 +78,8 @@ body {
     margin: 30% 0% 0% 0%;
   }
 }
+@media screen and (max-width: 380px) {
+  body #home {
+    width: auto;
+  }
+}

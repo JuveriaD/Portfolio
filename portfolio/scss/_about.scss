@@ -63,3 +63,14 @@ body #about {
     }
   }
 }
+@media screen and (max-width: 380px) {
+  body #about {
+    width: auto;
+    .maincontainer {
+      width: auto;
+      .container1 {
+        width: 325px;
+      }
+    }
+  }
+}
