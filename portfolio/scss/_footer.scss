@@ -13,8 +13,7 @@ body footer {
     }
 
     .fa-github {
-      content: "\f09b";
-      font-size: 25px;
+      font-size: 20px;
       color: black;
     }
     .fa-github:hover {
@@ -24,8 +23,7 @@ body footer {
       padding: 10px 10px 10px 10px;
     }
     .fa-twitter {
-      content: "\f099";
-      font-size: 25px;
+      font-size: 20px;
       color: rgb(59, 153, 230);
     }
     .fa-twitter:hover {
@@ -33,6 +31,17 @@ body footer {
       font-size: 25px;
       border-radius: 50%;
       padding: 10px 10px 10px 10px;
+    }
+    .fa-codepen {
+      font-size: 15px;
+      color: rgb(18, 18, 19);
+    }
+    .fa-codepen:hover {
+      border: 2px dotted rgb(3, 3, 3);
+      font-size: 25px;
+      border-radius: 50%;
+      padding: 10px 10px 10px 10px;
+      transform: rotateX(255px);
     }
   }
   .textarea {
