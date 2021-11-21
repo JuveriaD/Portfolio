@@ -1,0 +1,84 @@
+body #home {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 680px;
+  position: relative;
+  width: 100%;
+  top: 0;
+
+  .intro {
+    display: flex;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    #hellotext {
+      font-size: 40px;
+      // opacity: 0.9;
+      width: fit-content;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+      animation: span1 4s ease-in-out 2s 1 alternate;
+
+      background-color: rgb(255, 255, 255);
+      color: rgb(37, 35, 35);
+      font-weight: bold;
+      margin: 0 auto;
+
+      // text-align: center;
+
+      mix-blend-mode: screen;
+
+      @keyframes span1 {
+        from {
+          color: rgb(76, 135, 190);
+        }
+        to {
+          color: rgb(59, 59, 59);
+        }
+      }
+    }
+
+    p {
+      color: #000000;
+      background-color: rgb(255, 255, 255);
+      mix-blend-mode: screen;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+}
+
+body {
+  #home::before {
+    content: "";
+    background: url("../images/codebg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.67;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro {
+    flex-direction: row;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    margin: 30% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 380px) {
+  body #home {
+    width: auto;
+  }
+}
